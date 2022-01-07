@@ -20,20 +20,31 @@ all the dice values but we haven't covered these yet, although we will soon.   +
 import random
 
 want_to_quit = ''
+# while not want_to_quit:
+#     dice_value1 = random.randint(1, 6) #creates random dice number range 1 to 6.
+#     print(f'You rolled a {dice_value1}') #prints to user the dice roll random created.
+#     want_to_quit = input('Press enter to roll again, any other key to quit ') #ask user for input.
+
+# adds two dice without user prompt
+# while not want_to_quit:
+#     dice_value1 = random.randint(1, 6) #creates random dice number range 1 to 6.
+#     dice_value2 = random.randint(1, 6) #creates random dice number range 1 to 6.
+#     print(f'You rolled a {dice_value1}, {dice_value2}') #prints to user the dice roll random created.
+#     if dice_value1 == dice_value2:  # special roll condition.
+#         print(f'You rolled doubles, nice!')
+#     else:
+#         want_to_quit = input('Press enter to roll again, any other key to quit ') #ask user for input.
+
+#ask the user for the number of dice to roll.
 while not want_to_quit:
-    dice_count= float(input('How many dice do you want to roll, up to 3?: '))
-    if dice_count == 1:
-        dice_value1 = random.randint(1, 6)
-        print(f'You rolled a {dice_value1}')
-        want_to_quit = input('Press enter to roll again, any other key to quit ')
-    elif dice_count == 2:
-        dice_value1 = random.randint(1, 6)
-        dice_value2 = random.randint(1, 6)
-        print(f'You rolled a {dice_value1}, and a {dice_value2} ')
+    dice_value1 = random.randint(1, 6) #creates random dice number range 1 to 6.
+    dice_value2 = random.randint(1, 6) #creates random dice number range 1 to 6.
+    print(f'You rolled a {dice_value1}, {dice_value2}') #prints to user the dice roll random created.
+    if dice_value1 == dice_value2:  # special roll condition.
+        print(f'You rolled doubles, nice!')
     else:
-        dice_value1 = random.randint(1, 6)
-        dice_value2 = random.randint(1, 6)
-        dice_value3 = random.randint(1, 6)
-    print(f'You rolled a {dice_value1}, and {dice_value2}, {dice_value3} ')
-    want_to_quit = input('Press enter to roll again, any other key to quit ')
+        want_to_quit = input('Press enter to roll again, any other key to quit ') #ask user for input.
+
+
+    
     
