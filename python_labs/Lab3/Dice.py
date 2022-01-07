@@ -16,3 +16,24 @@ wish to to roll 3 dice. If the dice values are 4, 5, 2, they are not all the sam
 values are 4, 4, 4, the are all the same, print a message saying they are all the same. 
 You can do this using the things you've learned so far.  Another way is to use a list to store 
 all the dice values but we haven't covered these yet, although we will soon.   +4 points.   """
+
+import random
+
+want_to_quit = ''
+while not want_to_quit:
+    dice_count= float(input('How many dice do you want to roll, up to 3?: '))
+    if dice_count == 1:
+        dice_value1 = random.randint(1, 6)
+        print(f'You rolled a {dice_value1}')
+        want_to_quit = input('Press enter to roll again, any other key to quit ')
+    elif dice_count == 2:
+        dice_value1 = random.randint(1, 6)
+        dice_value2 = random.randint(1, 6)
+        print(f'You rolled a {dice_value1}, and a {dice_value2} ')
+    else:
+        dice_value1 = random.randint(1, 6)
+        dice_value2 = random.randint(1, 6)
+        dice_value3 = random.randint(1, 6)
+    print(f'You rolled a {dice_value1}, and {dice_value2}, {dice_value3} ')
+    want_to_quit = input('Press enter to roll again, any other key to quit ')
+    

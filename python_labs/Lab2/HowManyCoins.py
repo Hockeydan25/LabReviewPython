@@ -13,20 +13,20 @@ Print a message if so. Hint: look up the modulo % operator. It's covered in
 Chapter 1 of the textbook.)
 
 """
-'Hello and welcome to my penny counter program.'
-total = 1
-pennies = 1
+print('Hello and welcome to my penny counter program.')
+print('----------------------------------------------')
+
 pennies = float(input('How many Pennies do you have?: '))
 if pennies <= 99:
-    print('you have less than one dollar.)
+    print('you have less than one dollar.')
 elif pennies == 100:
-    print('you have exactly one dollar.)
+    print('you have exactly one dollar.')
 elif pennies == 200:
-    print('you have exactly two dollars.)
+    print('you have exactly two dollars.')
 elif pennies == 700:
-    print('you have exactly seven dollars.)    
+    print('you have exactly seven dollars.')    
 else:     
-    print('you have more than one dollar.)
+    print('you have more than one dollar.')
 
 
 
